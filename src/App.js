@@ -20,7 +20,10 @@ function App() {
         <Route path="/stocks">
           <Dashboard />
         </Route>
-        <Route path="/stocks/:symbol">
+        <Route
+          path="/stocks/:symbol"
+          render={(routerProps) => <Stock {...routerProps} />}
+          />
           <Stock />
         </Route>
       </Switch>
