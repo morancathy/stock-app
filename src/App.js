@@ -17,10 +17,10 @@ function App() {
         <Route path="/about">
           <About />
         </Route>
-        <Route path="/dashboard">
+        <Route path="/stocks">
           <Dashboard />
         </Route>
-        <Route path="/stock">
+        <Route path="/stocks/:symbol">
           <Stock />
         </Route>
       </Switch>
