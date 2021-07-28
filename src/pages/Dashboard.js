@@ -1,4 +1,4 @@
-
+import {Link} from "react-router-dom";
 
 const Dashboard = (props) => {
   const stocks = [
@@ -12,7 +12,15 @@ const Dashboard = (props) => {
 
   return (
     <div className="Dashboard">
-      This is the Dashboard
+      {stocks.map((stock) => {
+        const {name, symbol, lastPrice, change, high, low, open} = stock;
+
+        return (
+          <Link to={`/stocks/${symbol}`}>
+            <h2>{name}</h2>
+          </Link>  
+        )
+      })}
     </div>
   )
 };

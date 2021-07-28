@@ -17,14 +17,12 @@ function App() {
         <Route path="/about">
           <About />
         </Route>
-        <Route path="/stocks">
+        <Route exact path="/stocks">
           <Dashboard />
         </Route>
         <Route
           path="/stocks/:symbol"
-          render={(routerProps) => <Stock {...routerProps} />}
-          />
-          <Stock />
+          render={(routerProps) => <Stock {...routerProps} />}>
         </Route>
       </Switch>
     </div>
