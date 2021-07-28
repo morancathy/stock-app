@@ -1,8 +1,8 @@
 
 const Home = (props) => {
   return (
-    <div className="Home">
-    THis is Home Page
+    <div className="home">
+      <h1>This is the Home Page</h1>
     </div>
   )
 };

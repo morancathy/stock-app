@@ -1,7 +1,7 @@
 const About = (props) => {
   return (
-    <div className="About">
-      THis is About Page
+    <div className="about">
+      <h1>This is the About Page</h1>
     </div>
   )
 };

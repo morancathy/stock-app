@@ -1,21 +1,40 @@
 .App {
   font-family: sans-serif;
-  text-align: center;
 }
 
 .nav {
   display: flex;
-  justify-content: space-between;
-  background-color: green;
-  color: white;
-  padding: 15px;
-  font-size: 2rem;
+  align-items: center;
+  width: 100vw;
+  height: 50px;
+  padding: 0 20px;
+  background: #6532CB;
 }
 
-/* this is link tag...remember it has ancor tag */
-/* //space instead of > means decendent instead of 'direct' child . Use this
-beacuse there are other elements that get wrapped that we dont know, so just to be sure*/
+.nav > * {
+  padding-right: 20px;
+}
+
+.nav .nav-logo {
+  color: #99CC00;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
 .nav a {
-  color: white;
   text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.main {
+  padding: 0 20px;
+}
+
+li {
+  padding: 0 0 5px 20px ;
+}
+
+.dashboard {
+  margin-top: 10px;
 }
