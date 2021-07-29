@@ -18,7 +18,7 @@ const Stock = (props) => {
       const response = await fetch(url)
       const data = await response.json()
       setStock(data)
-      console.log(data)
+      console.log('data', data)
     } catch (error) {
       console.log("error: ", error)
     }
@@ -31,13 +31,12 @@ const Stock = (props) => {
   // render when data is fetched (if wanted, could write this inline in the return)
   const loaded = (
     <div>
-      <h1>Stock:{stock.name}</h1>
-      <p>Symbol:{stock.symbol}</p>
-      <p>Price: {stock.price}</p>
-      <p>Change: {stock.change}</p>
-      <p>Open: {stock.open}</p>
-      <p>Day low: {stock.dayLow}.</p>
-      <p>Day high: {stock.dayHigh}.</p>
+      <h2>Symbol: {stock[0].symbol}</h2>
+      <p>Current Price: {stock[0].price}</p>
+      <p>Change: {stock[0].change}</p>
+      <p>Open: {stock[0].open}</p>
+      <p>Day low: {stock[0].dayLow}.</p>
+      <p>Day high: {stock[0].dayHigh}.</p>
     </div>
   )
 
@@ -46,7 +45,7 @@ const Stock = (props) => {
 
   return (
     <div className="stock">
-    This is the Stock page for {symbol}.
+    <h1>Stock page for {stock[0].name}</h1>
     {stock ? loaded : loading}
     </div>
   )

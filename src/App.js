@@ -5,6 +5,7 @@ import About from "./pages/About";
 import Dashboard from "./pages/Dashboard";
 import Home from "./pages/Home";
 import Stock from "./pages/Stock";
+import MostActive from "./pages/MostActive";
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
         </Route>
         <Route path="/about">
           <About />
+        </Route>
+        <Route path="/mostactive">
+          <MostActive />
         </Route>
         <Route exact path="/stocks">
           <Dashboard />
