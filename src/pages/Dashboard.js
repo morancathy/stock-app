@@ -7,7 +7,7 @@ const Dashboard = (props) => {
     {name: "Alphabet Inc.", symbol: "GOOGL", price: 835.14, change: -4.50999999999999, dayHigh: 844, dayLow: 829.1, open: 842},
     {name: "Facebook, Inc.", symbol: "FB", price: 140.34, change: 0.810000000000002, dayHigh: 141.0244, dayLow: 139.76, open: 140.08},
     {name: "Oracle Corporation", symbol: "ORCL", price: 44.65, change: -0.300000000000004, dayHigh: 45.09, dayLow: 44.575, open: 44.91},
-    {name: "Intel Corporation", symbol: "INTL", price: 36.16, change: -0.370000000000005, dayHigh: 36.78, dayLow: 36.125, open: 36.58}
+    {name: "Intel Corporation", symbol: "INTC", price: 36.16, change: -0.370000000000005, dayHigh: 36.78, dayLow: 36.125, open: 36.58}
   ];
 
   return (

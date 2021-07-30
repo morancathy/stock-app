@@ -38,3 +38,41 @@ li {
 .dashboard {
   margin-top: 10px;
 }
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
+#activeOutput {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid gray;
+  align-content: flex-start;
+  width: 100vw;
+}
+
+#ticker {
+  font-weight: bold;
+  margin: 10px;
+  width: 100px;
+  justify-content: space-around;
+}
+
+#name {
+  margin: 10px;
+  width: 400px;
+}
+
+#price {
+  margin: 10px;
+  width: 200px;
+}
+
+#change {
+  margin: 10px;
+  width: 300px;
+}
