@@ -3,13 +3,14 @@ import {useEffect, useState} from 'react';
 const MostActive = (props) => {
   const apiKey = 'a19cc74d29a99191caf28a6610ba20f3';
   const url = `https://financialmodelingprep.com/api/v3/actives?apikey=${apiKey}`;
-  const [activeStock, setActiveStock] = useState({})
+  const [activeStock, setActiveStock] = useState([])      //changed to array becasue MAP IS ARRAY METHOD
 
   const getActiveStock = async () => {
     try {
       const response = await fetch(url)
       const data = await response.json()
-      setActiveStock(data)
+      // setActiveStock(data[0])
+      setActiveStock(data)    //changed so I can use the MAP method
     } catch (error) {
       console.log("error: ", error)
     }
@@ -22,7 +23,7 @@ const MostActive = (props) => {
   return (
     <div className="mostactive">
       <h2>Most Active Stocks</h2>
-      {console.log('line 30', activeStock)}
+      {console.log('line 30', activeStock)}       {/*remember map is an ARRAY method.  used activeStock, not activeStock.name*/}
       {activeStock ? activeStock.map((stock, key) => {
         const {ticker, changes, price, changesPercentage, companyName} = stock;
         return (
